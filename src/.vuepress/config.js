@@ -53,8 +53,13 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
+		
           title: 'Guide',
           collapsable: false,
+	  children: [
+            '',
+            'non-eagler',
+          ]
         }
       ],
     }
