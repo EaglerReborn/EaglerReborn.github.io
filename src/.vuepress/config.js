@@ -39,11 +39,11 @@ module.exports = {
    */
   themeConfig: {
     repo: 'https://github.com/EaglerReborn/EaglerReborn.github.io',
-    editLinks: true,
+    editLinks: false,
     docsDir: '',
     docsBranch: 'main',
-    editLinkText: 'Edit this page on Github!',
-    lastUpdated: false,
+    editLinkText: '',
+    lastUpdated: true,
     nav: [
       {
         text: 'Guide',
@@ -72,7 +72,7 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
     plugins: [
-	    ['@vuepress/back-to-top', true],
-	    'vuepress-plugin-smooth-scroll',
-    ]
+    '@vuepress/plugin-back-to-top',
+    '@vuepress/plugin-medium-zoom',
+  ]
 }
