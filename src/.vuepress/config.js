@@ -72,17 +72,7 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
     plugins: [
-		['vuepress-plugin-code-copy', true],
-		['flexsearch'],
-                ['code-switcher'],
-        '@vuepress/plugin-back-to-top',
-        'vuepress-plugin-smooth-scroll',
-        ['vuepress-plugin-medium-zoom',
-        {
-        	selector: "img",
-        	options: {
-            	background: 'var(--bodyBgColor)'
-            }
-        }],
+	    ['@vuepress/back-to-top', true],
+	    'vuepress-plugin-smooth-scroll',
     ]
 }
