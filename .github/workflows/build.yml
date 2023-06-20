@@ -7,6 +7,8 @@ on:
   pull_request:
 jobs:
   build:
+    permissions:
+      contents: write
     name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
@@ -27,7 +29,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.5
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main'}}
         with:
-          TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: src/.vuepress/dist
           CLEAN: true
+        
