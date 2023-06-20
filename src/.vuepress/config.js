@@ -28,10 +28,11 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
+    repo: 'https://github.com/EaglerReborn/EaglerReborn.github.io',
+    editLinks: true,
     docsDir: '',
-    editLinkText: '',
+    docsBranch: 'main',
+    editLinkText: 'Edit this page on Github',
     lastUpdated: false,
     nav: [
       {
