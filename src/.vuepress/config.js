@@ -19,7 +19,17 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', {
+			name: 'theme-color',
+			content: '#ffffff',
+			media: '(prefers-color-scheme: light)'
+		}],
+    ['meta', {
+			name: 'theme-color',
+			content: '#25262b',
+			media: '(prefers-color-scheme: dark)'
+		}]
   ],
 
   /**
@@ -32,7 +42,7 @@ module.exports = {
     editLinks: true,
     docsDir: '',
     docsBranch: 'main',
-    editLinkText: 'Edit this page on Github',
+    editLinkText: 'Edit this page on Github!',
     lastUpdated: false,
     nav: [
       {
@@ -62,7 +72,17 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
+    ['vuepress-plugin-code-copy', true],
+    ['code-switcher'],
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    'vuepress-plugin-smooth-scroll',
+    ['vuepress-plugin-medium-zoom',
+        {
+        	selector: "img",
+        	options: {
+            	background: 'var(--bodyBgColor)'
+            }
+        }],
+    
   ]
 }
