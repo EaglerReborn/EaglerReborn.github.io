@@ -1,15 +1,8 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: https://raw.githubusercontent.com/EaglerReborn/EaglerReborn.github.io/main/54d35ed2-62df-46a1-bc42-8bc81755532b.png
 tagline: An Eaglercraft Client that can connect to Java servers!
 actionText: Quick Start →
 actionLink: /guide/
-features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
 footer: Made by OtterDev with ❤️
 ---
