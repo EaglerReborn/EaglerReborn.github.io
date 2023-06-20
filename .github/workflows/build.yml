@@ -29,5 +29,5 @@ jobs:
         with:
           TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: docs
+          FOLDER: src/.vuepress/dist
           CLEAN: true
