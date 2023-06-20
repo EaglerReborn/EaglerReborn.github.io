@@ -1,0 +1,19 @@
+{
+  "name": "Eagler Reborn",
+  "version": "0.0.1",
+  "description": "An Eaglercraft Client that can connect to Java servers!",
+  "main": "index.js",
+  "authors": {
+    "name": "OtterDev",
+    "email": "oliver.anderson4435@gmail.com"
+  },
+  "repository": "https://github.com/EaglerReborn/EaglerReborn.github.io/Eagler Reborn",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
