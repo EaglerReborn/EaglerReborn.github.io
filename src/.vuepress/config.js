@@ -22,7 +22,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', {
 			name: 'theme-color',
-			content: '#ffffff',
+			content: '#25262b',
 			media: '(prefers-color-scheme: light)'
 		}],
     ['meta', {
