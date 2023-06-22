@@ -38,6 +38,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    smoothScroll: true,
     repo: 'https://github.com/EaglerReborn/EaglerReborn.github.io',
     editLinks: false,
     docsDir: '',
