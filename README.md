@@ -3,4 +3,5 @@ Eagler Reborn Site
 # Documentation & Wiki
 * https://eaglerreborn.github.io/guide
 # Credits
-* OtterDev
+* Wiki: OtterDev
+* Client: OtterDev
