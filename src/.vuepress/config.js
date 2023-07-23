@@ -60,6 +60,8 @@ module.exports = {
 	  children: [
             '',
             'non-eagler',
+	    'making-patch-files',
+	  
           ]
         }
       ],
