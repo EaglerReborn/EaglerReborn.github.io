@@ -50,6 +50,10 @@ module.exports = {
         text: 'Guide',
         link: '/guide/',
       },
+      {
+        text: 'Plugin Docs',
+        link: '/guide/plugindocs/',
+      },
     ],
     sidebar: {
       '/guide/': [
@@ -61,8 +65,10 @@ module.exports = {
             '',
             'non-eagler',
 	    'making-patch-files',
+	    'InstallingPlugins',
 	  
-          ]
+          ],
+
         }
       ],
     }
