@@ -106,3 +106,4 @@ It contains the following methods:
 - `getSplashSound() : string`
 - `getSwimSound() : string`
 - `getYOffset() : number`
+- `getClassName() : string`
