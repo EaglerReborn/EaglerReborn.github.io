@@ -32,55 +32,83 @@ A typical EntityData object will have the following properties:
 - `isOutsideBorder`: Boolean: Equal to the entity's `isOutsideBorder`.
 - `entityCollisionReduction`: Number: Equal to the entity's `entityCollisionReduction`.
 
-Hello. This doc isn't done. At all. Just understand that almost all of the functions listed here take the same arguments and have the same return type as in the normal `Entity.java`.
-However, rather than taking a list of arguments `func(a = 1, b = 2, c = 3)` they either take an object or nothing: `func({a: 1, b: 2, c: 3})`. I do this so I don't have to manually write interfaces for every combination possible. Good luck understanding the code below!
+It contains the following methods:
 
-```
-data.setCallbackBoolean("isBurning", ()->{return isBurning();});
-data.setCallbackBoolean("isPushedByWater", ()->{return isPushedByWater();});
-data.setCallbackBoolean("isEating", ()->{return isEating();});
-data.setCallbackBoolean("isEntityAlive", ()->{return isEntityAlive();});
-data.setCallbackBoolean("isEntityInsideOpaqueBlock", ()->{return isEntityInsideOpaqueBlock();});
-data.setCallbackBoolean("isImmuneToExplosions", ()->{return isImmuneToExplosions();});
-data.setCallbackBoolean("isImmuneToFire", ()->{return isImmuneToFire();});
-data.setCallbackBoolean("isInLava", ()->{return isInLava();});
-data.setCallbackBooleanWithDataArg("isInRangeToRender3d", (BaseData params)->{return isInRangeToRender3d(params.getDouble("x"), params.getDouble("y"), params.getDouble("z"));});
-data.setCallbackBooleanWithDataArg("isInRangeToRenderDist", (BaseData params)->{return isInRangeToRenderDist(params.getDouble("distance"));});
-data.setCallbackBoolean("isInWater", ()->{return isInWater();});
-data.setCallbackBoolean("isInvisible", ()->{return isInvisible();});
-data.setCallbackBoolean("isPushedByWater", ()->{return isPushedByWater();});
-data.setCallbackBoolean("isRiding", ()->{return isRiding();});
-data.setCallbackBoolean("isSilent", ()->{return isSilent();});
-data.setCallbackBoolean("isSneaking", ()->{return isSneaking();});
-data.setCallbackBoolean("isSprinting", ()->{return isSprinting();});
-data.setCallbackBoolean("isWet", ()->{return isWet();});
-
-data.setCallbackVoidWithDataArg("setAir", (BaseData params)->{setAir(params.getInt("air"));});
-data.setCallbackVoidWithDataArg("setAlwaysRenderNameTag", (BaseData params)->{setAlwaysRenderNameTag(params.getBoolean("alwaysRenderNameTag"));});
-data.setCallbackVoidWithDataArg("setAngles", (BaseData params)->{setAngles(params.getFloat("yaw"),params.getFloat("pitch"));});
-data.setCallbackVoid("setBeenAttacked", ()->{setBeenAttacked();});
-data.setCallbackVoidWithDataArg("setCustomNameTag", (BaseData params)->{setCustomNameTag(params.getString("name"));});
-data.setCallbackVoid("setDead", ()->{setDead();});
-data.setCallbackVoidWithDataArg("setEating", (BaseData params)->{setEating(params.getBoolean("eating"));});
-data.setCallbackVoidWithDataArg("setEntityId", (BaseData params)->{setEntityId(params.getInt("id"));});
-data.setCallbackVoidWithDataArg("setFire", (BaseData params)->{setFire(params.getInt("seconds"));});
-data.setCallbackVoidWithDataArg("setFlag", (BaseData params)->{setFlag(params.getInt("flag"), params.getBoolean("set"));});
-data.setCallbackVoid("setInWeb", ()->{setInWeb();});
-data.setCallbackVoidWithDataArg("setInvisible", (BaseData params)->{setInvisible(params.getBoolean("invisible"));});
-data.setCallbackVoidWithDataArg("setLocationAndAngles", (BaseData params)->{setLocationAndAngles(params.getDouble("x"), params.getDouble("y"), params.getDouble("z"), params.getFloat("yaw"), params.getFloat("pitch"));});
-data.setCallbackVoid("setOnFireFromLava", ()->{setOnFireFromLava();});
-data.setCallbackVoidWithDataArg("setOutsideBorder", (BaseData params)->{setOutsideBorder(params.getBoolean("outsideBorder"));});
-data.setCallbackVoidWithDataArg("setPosition", (BaseData params)->{setPosition(params.getDouble("x"), params.getDouble("y"), params.getDouble("z"));});
-data.setCallbackVoidWithDataArg("setPositionAndRotation", (BaseData params)->{setPositionAndRotation(params.getDouble("x"), params.getDouble("y"), params.getDouble("z"), params.getFloat("yaw"), params.getFloat("pitch"));});
-data.setCallbackVoidWithDataArg("setPositionAndRotation2", (BaseData params)->{setPositionAndRotation2(params.getDouble("d0"), params.getDouble("d1"), params.getDouble("d2"), params.getFloat("f"), params.getFloat("f1"), params.getInt("var9"), params.getBoolean("var10"));});
-data.setCallbackVoidWithDataArg("setPositionAndUpdate", (BaseData params)->{setPositionAndUpdate(params.getDouble("d0"), params.getDouble("d1"), params.getDouble("d2"));});
-data.setCallbackVoidWithDataArg("setRotation", (BaseData params)->{setRotation(params.getFloat("yaw"),params.getFloat("pitch"));});
-data.setCallbackVoidWithDataArg("setRotationYawHead", (BaseData params)->{setRotationYawHead(params.getFloat("rotation"));});
-data.setCallbackVoidWithDataArg("setSilent", (BaseData params)->{setSilent(params.getBoolean("isSilent"));});
-data.setCallbackVoidWithDataArg("setSize", (BaseData params)->{setSize(params.getFloat("f"), params.getFloat("f1"));});
-data.setCallbackVoidWithDataArg("setSneaking", (BaseData params)->{setSneaking(params.getBoolean("sneaking"));});
-data.setCallbackVoidWithDataArg("setSprinting", (BaseData params)->{setSprinting(params.getBoolean("flag"));});
-data.setCallbackVoidWithDataArg("setVelocity", (BaseData params)->{setVelocity(params.getDouble("x"), params.getDouble("y"), params.getDouble("z"));});
-
-data.setCallbackString("getUUID", ()->{return entityUniqueID.toString();});
-```
+- `isBurning() : boolean`
+- `isPushedByWater() : boolean`
+- `isEating() : boolean`
+- `isEntityAlive() : boolean`
+- `isEntityInsideOpaqueBlock() : boolean`
+- `isImmuneToExplosions() : boolean`
+- `isImmuneToFire() : boolean`
+- `isInLava() : boolean`
+- `isInRangeToRender3d({x: number, y: number: z: number}) : boolean`
+- `isInRangeToRenderDist({distance: number}) : boolean`
+- `isInWater() : boolean`
+- `isInvisible() : boolean`
+- `isPushedByWater() : boolean`
+- `isRiding() : boolean`
+- `isSilent() : boolean`
+- `isSneaking() : boolean`
+- `isSprinting() : boolean`
+- `isWet() : boolean`
+- `setAir({air: integer}) : void`
+- `setAlwaysRenderNameTag({alwaysRenderNameTag: boolean}) : void`
+- `setAngles({yaw: number, pitch: number}) : void`
+- `setBeenAttacked() : void`
+- `setCustomNameTag({name: string}) : void`
+- `setDead() : void`
+- `setEating({eating: boolean}) : void`
+- `setEntityId({id: integer}) : void`
+- `setFire({seconds: integer}) : void`
+- `setFlag({flag: integer, set: boolean}) : void`
+- `setInWeb() : void`
+- `setInvisible({invisible: boolean}) : void`
+- `setLocationAndAngles({x: number, y: number, z: number, yaw: number, pitch: number}) : void`
+- `setOnFireFromLava() : void`
+- `setOutsideBorder({outsideBorder: boolean}) : void`
+- `setPosition({x: number, y: number, z: number}) : void`
+- `setPositionAndRotation({x: number, y: number, z: number, yaw: number, pitch: number}) : void`
+- `setPositionAndRotation2({d0: number, d1: number, d2: number, f: number, f1: number, var9: integer, var10: boolean}) : void`
+- `setPositionAndUpdate({d0: number, d1: number, d2: number}) : void`
+- `setRotation({yaw: number, pitch: number}) : void`
+- `setRotationYawHead({rotation: number}) : void`
+- `setSilent({isSilent: boolean}) : void`
+- `setSize({f: number, f1: number}) : void`
+- `setSneaking({sneaking: boolean}) : void`
+- `setSprinting({flag: boolean}) : void`
+- `setVelocity({x: number, y: number, z: number}) : void`
+- `getUUID() : string`
+- `getAir() : integer`
+- `getAlwaysRenderNameTag() : boolean`
+- `getAlwaysRenderNameTagForRender() : boolean`
+- `getBrightness({var1: number}) : number`
+- `getBrightnessForRender({var1: number}) : integer`
+- `getCollisionBorderSize() : number`
+- `getCollisionBoundingBox() : [AxisAlignedBB](AxisAlignedBB.md)`
+- `getCommandSenderEntity() : [EntityData](EntityData.md)`
+- `getCustomNameTag() : string`
+- `getDisplayName() : string`
+- `getDisplayNameFormatted() : string`
+- `getDistance({x: number, y: number, z: number}) : number`
+- `getDistanceSq({x: number, y: number, z: number}) : number`
+- `getMountedYOffset() : number`
+- `getEntityId() : integer`
+- `getEntityString() : string`
+- `getEyeHeight() : number`
+- `getFlag({flag: integer}) : boolean`
+- `getMaxFallHeight() : integer`
+- `getMaxInPortalTime() : integer`
+- `getName() : string`
+- `getParts() : [Array<EntityData>](EntityData.md)`
+- `getPortalCooldown() : integer`
+- `getRotationYawHead() : number`
+- `getSplashSound() : string`
+- `getSwimSound() : string`
+- `getYOffset() : number`
+- `getClassName() : string`
+- `getPositionVector() : [Vec3](Vec3.md)`
+- `getPositionEyes({partialTicks: number}) : [Vec3](Vec3.md)`
+- `getLook({partialTicks: number}) : [Vec3](Vec3.md)`
+- `getLookVec() : [Vec3](Vec3.md)`
+- `getVectorForRotation({yaw: number, float: number}) : [Vec3](Vec3.md)`
