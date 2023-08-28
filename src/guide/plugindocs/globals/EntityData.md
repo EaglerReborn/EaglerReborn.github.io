@@ -100,7 +100,7 @@ It contains the following methods:
 - `getMaxFallHeight() : integer`
 - `getMaxInPortalTime() : integer`
 - `getName() : string`
-- `getParts() : [EntityData[]](EntityData.md)`
+- `getParts() : [Array<EntityData>](EntityData.md)`
 - `getPortalCooldown() : integer`
 - `getRotationYawHead() : number`
 - `getSplashSound() : string`
