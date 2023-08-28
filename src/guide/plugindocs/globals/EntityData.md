@@ -107,3 +107,8 @@ It contains the following methods:
 - `getSwimSound() : string`
 - `getYOffset() : number`
 - `getClassName() : string`
+- `getPositionVector() : [Vec3](Vec3.md)`
+- `getPositionEyes({partialTicks: number}) : [Vec3](Vec3.md)`
+- `getLook({partialTicks: number}) : [Vec3](Vec3.md)`
+- `getLookVec() : [Vec3](Vec3.md)`
+- `getVectorForRotation({yaw: number, float: number}) : [Vec3](Vec3.md)`
