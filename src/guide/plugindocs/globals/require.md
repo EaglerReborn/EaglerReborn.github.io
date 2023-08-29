@@ -1,4 +1,4 @@
-# PluginAPI.updateComponent(String componentName)
+# PluginAPI.require(String componentName)
 This method is used to tell `PluginAPI` that a global needs to be generated.
 
 ## Arguments:
