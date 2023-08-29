@@ -7,3 +7,6 @@ Has the following properties:
 - `bFull3D : Boolean`
 - `hasSubtypes : Boolean`
 - `potionEffect : String`
+
+Has the following methods:
+- `getID() : Integer`
