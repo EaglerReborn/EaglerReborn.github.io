@@ -13,10 +13,10 @@
 </ol>
 
 Here is a sample plugin that allows you to climb up walls like a spider:
-https://raw.githubusercontent.com/ZXMushroom63/EaglerPL/main/plugins/spider.js
+https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/plugins/spider.js
 
 And one that allows you to step up 9.5 blocks:<br>
-https://raw.githubusercontent.com/ZXMushroom63/EaglerPL/main/plugins/step.js
+https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/plugins/step.js
 
 And finally, a grappling hook mod!:<br>
-https://raw.githubusercontent.com/ZXMushroom63/EaglerPL/main/plugins/grapplehook.js
+https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/plugins/grapplehook.js
