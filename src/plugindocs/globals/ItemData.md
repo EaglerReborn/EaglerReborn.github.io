@@ -10,3 +10,8 @@ Has the following properties:
 
 Has the following methods:
 - `getID() : Integer`
+- `setMaxStackSize(maxStackSize: Integer) : [ItemData](ItemData.md)`
+- `setHasSubtypes(hasSubtypes: Boolean) : [ItemData](ItemData.md)`
+- `setMaxDamage(maxDamageIn: Integer) : [ItemData](ItemData.md)`
+- `setUnlocalizedName(s: String) : [ItemData](ItemData.md)`
+- `setPotionEffect(potionEffect: String) : [ItemData](ItemData.md)`
