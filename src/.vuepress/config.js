@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         text: 'Plugin Docs',
-        link: '/guide/plugindocs/',
+        link: '/plugindocs/',
       },
     ],
     sidebar: {
