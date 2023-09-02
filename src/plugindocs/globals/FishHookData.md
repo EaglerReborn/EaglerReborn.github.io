@@ -1,6 +1,5 @@
-# EntityData
+# FishHookData
 
-A typical EntityData object will have the following properties:
 All of the properties of [EntityData](EntityData.md), and:
 - `inGround`: Boolean: Whether or not the fish hook is in the ground.
 - `xTile`: Integer: Equal to the fish hook's `xTile`.
