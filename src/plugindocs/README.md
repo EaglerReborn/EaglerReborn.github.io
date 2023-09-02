@@ -11,5 +11,4 @@ It has the following methods:
 
 
 
-
 It also has some global objects which expose some of the inner Minecraft workings. Go [here](globals/ListOfGlobals.md) to view the full list.
