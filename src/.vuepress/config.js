@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         text: 'Plugin Docs',
-        link: '/guide/plugindocs/',
+        link: '/plugindocs/',
       },
     ],
     sidebar: {
@@ -70,6 +70,41 @@ module.exports = {
           ],
 
         }
+      ],
+'/plugindocs/': [
+	{
+	  title: 'Plugin API',
+	  collapsable: false,
+	  children: [
+		  '',
+	  ],
+	},
+	{
+	  title: 'Events',
+	  collapsable: true,
+	  children: [
+		  'events/addEventListener',
+	  ],
+	},
+	{
+	  title: 'Globals',
+	  collapsable: true,
+	  children: [
+		  'globals/AxisAlignedBB',
+		  'globals/BlockData',
+		  'globals/EnchantmentData',
+		  'globals/EntityData',
+		  'globals/FishHookData',
+		  'globals/ItemData',
+		  'globals/ListOfGlobals',
+		  'globals/MapColor',
+		  'globals/MaterialData',
+		  'globals/PlayerData',
+		  'globals/Vec3',
+		  'globals/require',
+		  'globals/updateComponent',
+	  ],
+	}
       ],
     }
   },

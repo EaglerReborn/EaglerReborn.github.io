@@ -1,6 +1,5 @@
-# EntityData
+# PlayerData
 
-A typical EntityData object will have the following properties:
 All of the properties of [EntityData](EntityData.md), and:
 
 - `cameraYaw`: Number: Equal to the player's `cameraYaw`.
