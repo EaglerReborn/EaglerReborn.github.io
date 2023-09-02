@@ -6,7 +6,7 @@ Has the following properties:
 - `animationsToGo : Integer`
 - `itemId : Integer`
 - `itemDamage : Integer`
-- `itemFrame : [EntityData](EntityData.md)`
+- `itemFrame : [EntityData](EntityData.md)` (If existing)
 - `canDestroyCacheBlock : BlockData`
 - `canDestroyCacheResult : Boolean`
 - `canPlaceOnCacheBlock : BlockData`
