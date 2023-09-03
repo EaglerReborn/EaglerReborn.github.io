@@ -90,6 +90,7 @@ module.exports = {
 	  title: 'Globals',
 	  collapsable: true,
 	  children: [
+      'globals/Data',
 		  'globals/AxisAlignedBB',
 		  'globals/BlockData',
 		  'globals/EnchantmentData',
@@ -100,6 +101,9 @@ module.exports = {
 		  'globals/MapColor',
 		  'globals/MaterialData',
 		  'globals/PlayerData',
+      'globals/ItemStackData',
+		  'globals/InventoryBasicData',
+      'globals/ContainerData',
 		  'globals/Vec3',
 		  'globals/require',
 		  'globals/updateComponent',
