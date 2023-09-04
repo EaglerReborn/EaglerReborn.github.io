@@ -13,6 +13,7 @@ All of the properties of [EntityData](EntityData.md), and:
 - `flyToggleTimer`: Integer: Equal to the player's `flyToggleTimer`.
 - `hasReducedDebug`: Boolean: Equal to the player's `hasReducedDebug`.
 - `itemInUseCount`: Integer: The count of the item that the player is currenly using. (Read-only)
+- `itemInUse`: [ItemStackData](ItemStackData.md): The itemstack the player is using. (If existing)
 - `lastXPSound`: Integer: Equal to the player's `lastXPSound`.
 - `sleepTimer`: Integer: Equal to the player's `sleepTimer`.
 - `sleeping`: Boolean: Whether or not the player is sleeping.
