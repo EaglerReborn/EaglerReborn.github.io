@@ -1,4 +1,4 @@
-# Vec3i
+# BlockPos
 Represents a block position.
 
 Has all of the properties and methods of [Vec3i](Vec3i.md)
