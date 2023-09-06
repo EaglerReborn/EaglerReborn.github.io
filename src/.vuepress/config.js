@@ -105,6 +105,8 @@ module.exports = {
 		  'globals/InventoryBasicData',
       'globals/ContainerData',
 		  'globals/Vec3',
+      'globals/Vec3i',
+      'globals/BlockPos',
 		  'globals/require',
 		  'globals/updateComponent',
 	  ],
