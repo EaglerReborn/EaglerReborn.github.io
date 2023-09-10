@@ -8,15 +8,15 @@
   <li>Click 'Plugins'</li>
   <li>Click 'Add New'</li>
   <li>Paste in the .js url.</li>
-  <li>Reload to use the plugin.</li>
+  <li>Optional: Refresh the GUI to see if the plugin loaded correctly.</li>
   <li>Optional: If the plugin is not working, go to options > plugins and make sure it says 'LOADED' next to your plugin. If it doesn't, it's not my fault!!!</li>
 </ol>
 
 Here is a sample plugin that allows you to climb up walls like a spider:
-https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/plugins/spider.js
+https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/exampleplugins/spider.js
 
 And one that allows you to step up 9.5 blocks:<br>
-https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/plugins/step.js
+https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/exampleplugins/step.js
 
 And finally, a grappling hook mod!:<br>
-https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/plugins/grapplehook.js
+https://raw.githubusercontent.com/EaglerReborn/EaglerReborn/main/exampleplugins/grapplehook.js

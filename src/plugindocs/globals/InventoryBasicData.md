@@ -2,7 +2,7 @@
 Represents a basic inventory.
 
 Has the following properties:
-- `inventoryContents : [ItemStackData](ItemStackData.md)[]`
-- `inventoryTitle : String`
-- `slotsCount : Integer`
-- `hasCustomName : Boolean`
+- `inventoryContents: ItemStackData[]`
+- `inventoryTitle: String`
+- `slotsCount: Integer`
+- `hasCustomName: Boolean`
