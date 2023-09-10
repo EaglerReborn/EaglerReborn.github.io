@@ -1,6 +1,8 @@
 # AxisAlignedBB
-
 Used to represent bounding boxes.
+
+### Constructor:
+PluginAPI.contructors.AxisAlignedBB({x1: Number, y1: Number, z1: Number, x2: Number, y2: Number, z2: Number})
 
 Has the following properties:
 - `minX`: Number: equal to the bounding box's `minX`

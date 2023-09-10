@@ -112,3 +112,5 @@ It contains the following methods:
 - `getLook({partialTicks: number}) : [Vec3](Vec3.md)`
 - `getLookVec() : [Vec3](Vec3.md)`
 - `getVectorForRotation({yaw: number, float: number}) : [Vec3](Vec3.md)`
+- `toNBT() : String`
+- `fromNBT({nbt: String}) : void`

@@ -1,6 +1,8 @@
 # Vec3
-
 Used to represent a point in 3d space.
+
+### Constructor:
+PluginAPI.contructors.Vec3({x: Number, y: Number, z: Number})
 
 Has the following properties:
 - `x`: Number: equal to the vector's `xCoord`

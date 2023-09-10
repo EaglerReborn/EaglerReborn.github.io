@@ -1,6 +1,7 @@
 # PlayerData
+Represents a player.
 
-All of the properties of [EntityData](EntityData.md), and:
+A PlayerData usually has all of the properties of [LivingEntityData](LivingEntityData.md), and:
 
 - `cameraYaw`: Number: Equal to the player's `cameraYaw`.
 - `chasingPosX`: Number: Equal to the player's `chasingPosX`.
@@ -22,3 +23,9 @@ All of the properties of [EntityData](EntityData.md), and:
 - `speedOnGround`: Number: Equal to the player's `speedOnGround`.
 - `xpCooldown`: Integer: Equal to the player's `xpCooldown`.
 - `xpSeed`: Integer: Equal to the player's `xpSeed`.
+- `inventoryContainer`: [ContainerData](ContainerData.md): Equal to the player's `inventoryContainer`.
+- `openContainer`: [ContainerData](ContainerData.md): Equal to the player's `openContainer`.
+- `inventory`: [InventoryPlayerData](InventoryPlayerData.md): Equals to the player's `inventory`.
+- `capabilities`: [PlayerCapabilities](PlayerCapabilities.md): Equals to the player's `capabilities`.
+
+Todo: methods.

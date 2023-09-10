@@ -1,6 +1,9 @@
 # ItemStackData
 Represents an itemstack.
 
+### Constructor:
+PluginAPI.contructors.ItemStack({itemId: Integer, amount: Integer, itemDamage: Integer})
+
 Has the following properties:
 - `amount : Integer`
 - `animationsToGo : Integer`
@@ -13,7 +16,7 @@ Has the following properties:
 - `canPlaceOnCacheResult : Boolean`
 
 Has the following methods:
-- `getItem() : [ItemData.md](ItemData.md)`
+- `getItem() : ItemData`
 - `getMaxStackSize() : Integer`
 - `isStackable() : Boolean`
 - `isItemStackDamageable() : Boolean`
@@ -23,22 +26,26 @@ Has the following methods:
 - `getMetadata() : Integer`
 - `setItemDamage({meta: Integer}) : void`
 - `getMaxDamage() : Integer`
-- `copy() : [ItemStackData.md](ItemStackData.md)`
+- `copy() : ItemStackData`
 - `getUnlocalizedName() : String`
 - `toString() : String`
 - `getMaxItemUseDuration() : Integer`
 - `getDisplayName() : String`
-- `setDisplayName(displayName: String) : [ItemStackData.md](ItemStackData.md)`
+- `setDisplayName({displayName: String}) : ItemStackData`
 - `clearCustomName() : void`
 - `hasDisplayName() : Boolean`
 - `hasEffect() : Boolean`
 - `isItemEnchantable() : Boolean`
-- `addEnchantment(enchId: Integer, level: Integer) : void`
+- `addEnchantment({enchId: Integer, level: Integer}) : void`
 - `isItemEnchanted() : Boolean`
 - `canEditBlocks() : Boolean`
 - `isOnItemFrame() : Boolean`
 - `getRepairCost() : Integer`
-- `setRepairCost(cost: Integer) : void`
+- `setRepairCost({cost: Integer}) : void`
 - `setItem(itemId: Integer) : void`
-- `canDestroy(blockId: Integer) : Boolean`
-- `canPlaceOn(blockId: Integer) : Boolean`
+- `canDestroy({blockId: Integer}) : Boolean`
+- `canPlaceOn({blockId: Integer}) : Boolean`
+- `toNBT() : String`
+- `fromNBT({nbt: String}) : void`
+- `getLore() : String[]`
+- `setLore({lore: String[]}) : void`

@@ -1,5 +1,6 @@
-# PluginAPI.updateComponent(String componentName)
+# PluginAPI.updateComponent(String componentName) [DEPRECATED]
 This method is used to tell `PluginAPI` that a global needs to be reloaded.
+It is deprecated and should no longer be used. Instead, call `reload()` on the object that needs updating.
 
 ## Arguments:
 

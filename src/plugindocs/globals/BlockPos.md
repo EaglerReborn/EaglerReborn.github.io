@@ -1,6 +1,9 @@
 # BlockPos
 Represents a block position.
 
+### Constructor:
+PluginAPI.contructors.BlockPos({x: Integer, y: Integer, z: Integer})
+
 Has all of the properties and methods of [Vec3i](Vec3i.md)
 
 Has the following methods:

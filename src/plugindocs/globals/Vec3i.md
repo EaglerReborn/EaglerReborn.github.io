@@ -1,6 +1,9 @@
 # Vec3i
 Represents a 3d integer point in 3d space.
 
+### Constructor:
+PluginAPI.contructors.Vec3i({x: Integer, y: Integer, z: Integer})
+
 Has the following properties:
 - `x` : Integer
 - `y` : Integer
