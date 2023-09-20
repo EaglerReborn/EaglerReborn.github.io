@@ -22,6 +22,8 @@ Has the following properties:
 - `lightValue`: Integer: equal to the block's `lightValue`
 - `blockHardness`: Integer: equal to the block's `blockHardness`
 - `blockResistance`: Integer: equal to the block's `blockResistance`
+- `noRender`: Boolean: equal to the block's `noRender`
+- `forceRender`: Boolean: equal to the block's `forceRender`
 
 It has the following methods:
 - `getID() : Integer`
