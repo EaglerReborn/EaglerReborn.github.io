@@ -328,4 +328,38 @@ Events called by packets beinbg received from the server by the client.
 - `packetstatistics`
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
-Todo: 24 Events left
+- `packetentityeffect`
+    - `entityId`: Integer
+    - `duration`: Integer
+    - `effectId`: Byte
+    - `amplifier`: Byte
+    - `hideParticles`: Byte
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetcombatevent`
+    - `eventType`: String [read-only]
+    - `deathMessage`: String
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetserverdifficulty`
+    - `difficulty`: String [read-only]
+    - `difficultyLocked`: Boolean
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetcamera`
+    - `entityId`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetworldborder`
+    - `action`: String [read-only]
+    - `size`: Integer
+    - `centerX`: Number
+    - `centerZ`: Number
+    - `targetSize`: Number
+    - `diameter`: Number
+    - `warningTime`: Integer
+    - `warningDistance`: Integer
+    - `timeUntilTarget`: Number [read-only]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+Todo: 19 Events left
