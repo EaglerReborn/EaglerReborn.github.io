@@ -1,7 +1,7 @@
 # List of Globals
 
 - `PluginAPI.player`
-    A [`PlayerData`](PlayerData.md) made from `EntityPlayerSP`.
+    A [`LocalPlayerData`](LocalPlayerData.md) made from `EntityPlayerSP`.
 - `PluginAPI.items`
     An [`ItemData`](ItemData.md) array of all the in-game item types, and block-item types. [Auto]
 - `PluginAPI.blocks`
