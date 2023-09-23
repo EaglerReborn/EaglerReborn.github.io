@@ -362,4 +362,114 @@ Events called by packets beinbg received from the server by the client.
     - `timeUntilTarget`: Number [read-only]
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
-Todo: 19 Events left
+- `packettitle`
+    - `type`: String [read-only]
+    - `message`: String [change-length]
+    - `fadeInTime`: Integer
+    - `displayTime`: Integer
+    - `fadeOutTime`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetsetcompressionlevel`
+    - `threshold`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetplayerlistheaderfooter`
+    - `header`: String [change-length]
+    - `footer`: String [change-length]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetremoveentityeffect`
+    - `entityId`: Integer
+    - `effectId`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetplayerlistitem`
+    - `action`: String [read-only]
+    - `players`: Array of objects with properties:
+        - `ping`: Integer [read-only]
+        - `gamemode`: String [read-only]
+        - `displayNameFormatted`: String [read-only]
+        - `displayName`: String [read-only]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetkeepalive`
+    - `id`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetplayerabilities`
+    - `flySpeed`: Number
+    - `walkSpeed`: Number
+    - `invulnerable`: Boolean
+    - `flying`: Boolean
+    - `creativeMode`: Boolean
+    - `allowFlying`: Boolean
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetplayerabilities`
+    - `matches`: String[]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetsoundeffect`
+    - `soundName`: String
+    - `posX`: Integer
+    - `posY`: Integer
+    - `posZ`: Integer
+    - `soundVolume`: Number
+    - `soundPitch`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetresourcepack`
+    - `url`: String
+    - `hash`: String
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetupdateentitynbt`
+    - `entityId`: Integer
+    - `nbt`: String
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetcustompayload`
+    - `channel`: String
+    - `data`: String [read-only]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetscoreboardobjective`
+    - `objectiveName`: String
+    - `objectiveValue`: String
+    - `type`: String [read-only]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetupdatescore`
+    - `name`: String
+    - `objective`: String
+    - `value`: Integer
+    - `action`: String [read-only]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetdisplayscoreboard`
+    - `scoreName`: String
+    - `position`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetteams`
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+    (Note: the packet is obfuscated, so i got no clue what its supposed to be)
+
+- `packetparticles`
+    - `particleType`: String [read-only]
+    - `xCoord`: Number
+    - `yCoord`: Number
+    - `zCoord`: Number
+    - `xOffset`: Number
+    - `yOffset`: Number
+    - `zOffset`: Number
+    - `particleSpeed`: Number
+    - `particleCount`: Integer
+    - `longDistance`: Boolean
+    - `particleArguments`: Integer[]
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
+
+- `packetentityproperties`
+    - `entityId`: Integer
+    - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
