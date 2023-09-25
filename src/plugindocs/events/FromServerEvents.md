@@ -431,7 +431,6 @@ Events called by packets beinbg received from the server by the client.
 
 - `packetcustompayload`
     - `channel`: String
-    - `data`: String [read-only]
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `packetscoreboardobjective`
