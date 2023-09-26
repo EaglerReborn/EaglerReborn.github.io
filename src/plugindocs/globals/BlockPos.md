@@ -1,4 +1,4 @@
-# Vec3i
+# BlockPos
 Represents a block position.
 
 ### Constructor:

@@ -4,4 +4,5 @@ Eagler Reborn Site
 * https://eaglerreborn.github.io/guide
 # Credits
 * Wiki: OtterDev
+* Plugin Docs: ZXMushroom63
 * Client: OtterDev
