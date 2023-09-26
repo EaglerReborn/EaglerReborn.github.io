@@ -3,7 +3,7 @@ The Plugin API consists of a global JavaScript object on the window, called, ver
 
 
 It has the following properties:
-- `player: PlayerData`
+- `player: LocalPlayerData`
     - A [`LocalPlayerData`](globals/LocalPlayerData.md) made from `EntityPlayerSP`.
 - `items: ItemData{}`
     - A [`ItemData`](globals/ItemData.md) dictionary of all item types, and block-item types. [Auto]
