@@ -1,5 +1,5 @@
 # Receiving packet events
-Events called by packets beinbg received from the server by the client.
+Events called by packets being received from the server by the client.
 
 - `packetjoingame`
     Called when the user joins a server. Passes an object with properties:
