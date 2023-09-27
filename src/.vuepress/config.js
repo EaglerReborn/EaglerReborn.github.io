@@ -84,6 +84,7 @@ module.exports = {
 	  collapsable: true,
 	  children: [
 		  'events/addEventListener',
+		  'events/FromServerEvents',
 	  ],
 	},
 	{
