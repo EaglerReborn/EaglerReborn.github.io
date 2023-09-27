@@ -7,7 +7,7 @@ Events called by packets being received from the server by the client.
     - `difficulty`: String representing the difficulty.
     - `entityId`: Integer representing the entity id of the player.
     - `maxPlayers`: Integer representing the maximum number of players that can join a server.
-    - `hardcoreMode`: Boolean representing the maximum number of players that can join a server.
+    - `hardcoreMode`: Boolean representing if the server is hardcore or not
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `packetspawnobject`
