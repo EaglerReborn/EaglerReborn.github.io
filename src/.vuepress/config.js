@@ -54,10 +54,6 @@ module.exports = {
         text: 'Plugin Docs',
         link: '/plugindocs/',
       },
-      {
-        text: 'Plugins',
-        link: '/plugins/',
-      },
     ],
     sidebar: {
       '/guide/': [
