@@ -39,7 +39,7 @@ module.exports = {
    */
   themeConfig: {
     smoothScroll: true,
-    repo: 'https://github.com/radmanplays/EaglerReborn.github.io',
+    repo: 'https://github.com/EaglerReborn/EaglerReborn.github.io',
     editLinks: false,
     docsDir: '',
     docsBranch: 'main',
