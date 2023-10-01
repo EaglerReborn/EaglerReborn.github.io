@@ -36,13 +36,13 @@ Has the following methods:
 - `hasDisplayName() : Boolean`
 - `hasEffect() : Boolean`
 - `isItemEnchantable() : Boolean`
-- `addEnchantment({enchId: Integer, level: Integer}) : void`
+- `addEnchantment({ench: EnchantmentRef, level: Integer}) : void`
 - `isItemEnchanted() : Boolean`
 - `canEditBlocks() : Boolean`
 - `isOnItemFrame() : Boolean`
 - `getRepairCost() : Integer`
 - `setRepairCost({cost: Integer}) : void`
-- `setItem(itemId: Integer) : void`
+- `setItem(newItem: ItemRef) : void`
 - `canDestroy({blockId: Integer}) : Boolean`
 - `canPlaceOn({blockId: Integer}) : Boolean`
 - `toNBT() : String`

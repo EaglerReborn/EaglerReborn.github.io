@@ -23,7 +23,7 @@ A LocalPlayerData usually has all of the properties of [PlayerData](PlayerData.m
 - `horseJumpPowerCounter: Integer`
 
 It has these methods:
-- `mountEntity({entityUUID: String}) : void`
+- `mountEntity({entityIn: EntityRef}) : void`
 - `dropOneItem({dropAll: Boolean}) : EntityData`
 - `sendChatMessage({message: String}) : void`
 - `respawnPlayer() : void`

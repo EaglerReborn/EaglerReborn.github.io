@@ -31,6 +31,9 @@ It has the following methods:
 - `displayToChat({msg: String})`
     - Displays client-side message to user's ingame chat gui.
 
+### Passing 'Ref' objects
+Eg: `setCurrentItemOrArmor({slotIn: Integer, itemStack: ItemStackRef}) : void`
+This method's itemStack parameter uses an 'ItemStackRef'. 'Refs' are short for 'references', as they are the root reference to a java object, not just a data wrapper. You can get a ref from a Data by using `getRef()`, as specified [here](globals/Data.md).
 
 ### Using non-auto properties
 In order to use non-auto properties like `PluginAPI.player`, they must be [required](globals/require.md)
