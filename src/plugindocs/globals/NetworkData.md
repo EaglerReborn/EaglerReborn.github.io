@@ -30,7 +30,6 @@ Methods:
 - `sendPacketPlayerAbilities({capabilitiesRef: PlayerCapabilitiesRef}) : void`
 - `sendPacketTabComplete({msg: String}) : void`
 - `sendPacketTabComplete({msg: String, target: BlockPos}) : void`
-- `sendPacketTabComplete({msg: String}) : void`
 - `sendPacketClientSettings({lang: String, view: Integer, chatVisibility: String, enableColors: Boolean, modelPartFlags: Integer}) : void`
     - `chatVisibility` can be one of: `FULL`, `SYSTEM` or `HIDDEN`
 - `sendPacketClientStatus({status: String}) : void`
