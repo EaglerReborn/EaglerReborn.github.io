@@ -14,10 +14,13 @@ It has the following properties:
 - `enchantments: EnchantmentData{}`
     - An [`EnchantmentData`](EnchantmentData.md) dictionary of all the in-game enchantments. [Auto]
 - `constructors: Object`
-    A object containing constructors to make some Java objects from within JavaScript. [Auto]
+    - A object containing constructors to make some Java objects from within JavaScript. [Auto]
 - `javaClient: Object`
-    This is the `Minecraft` instance exposed to JavaScript. It has no wrapping, and so many properties will be illegible. To use it, I would recommend editing the `build.gradle` in the worspace to set `minifying: false;` [Auto]
+    - This is the `Minecraft` instance exposed to JavaScript. It has no wrapping, and so many properties will be illegible. To use it, I would recommend editing the `build.gradle` in the worspace to set `minifying: false;` [Auto]
 - `version: String`
+    - The version of the Plugin API (If not accessible, you can check the PluginAPI version in the f3 menu)
+- `clientBrand: String`
+    - The brand of the Eaglercraft client, taken from `ClientBrandRetriever.java`
 
 
 It has the following methods:
