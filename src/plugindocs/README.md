@@ -5,6 +5,8 @@ The Plugin API consists of a global JavaScript object on the window, called, ver
 It has the following properties:
 - `player: LocalPlayerData`
     - A [`LocalPlayerData`](globals/LocalPlayerData.md) made from `EntityPlayerSP`.
+- `network: NetworkData`
+    - A [`NetworkData`](globals/NetworkData.md) made from `NetHandlerPlayClient`.
 - `items: ItemData{}`
     - A [`ItemData`](globals/ItemData.md) dictionary of all item types, and block-item types. [Auto]
 - `blocks: BlockData{}`
@@ -39,7 +41,7 @@ Eg: `setCurrentItemOrArmor({slotIn: Integer, itemStack: ItemStackRef}) : void`
 This method's itemStack parameter uses an 'ItemStackRef'. 'Refs' are short for 'references', as they are the root reference to a java object, not just a data wrapper. You can get a ref from a Data by using `getRef()`, as specified [here](globals/Data.md).
 
 ### Using non-auto properties
-In order to use non-auto properties like `PluginAPI.player`, they must be [required](globals/require.md)
+In order to use non-auto properties like `PluginAPI.player` or `PluginAPI.network`, they must be [required](globals/require.md)
 
 ### Triggering data updates (`reload()`)
 To trigger the game to read your updated values, call the `reload()` method on the object.
