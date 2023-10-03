@@ -35,6 +35,10 @@ It has the following methods:
     - Documentation [here](globals/updateComponent.md)
 - `displayToChat({msg: String})`
     - Displays client-side message to user's ingame chat gui.
+- `clickMouse()`
+    - Triggers a left click ingame.
+- `rightClickMouse()`
+    - Triggers a right click ingame.
 
 ### Passing 'Ref' objects
 Eg: `setCurrentItemOrArmor({slotIn: Integer, itemStack: ItemStackRef}) : void`
