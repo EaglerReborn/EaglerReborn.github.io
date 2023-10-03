@@ -108,6 +108,7 @@ module.exports = {
       'globals/LocalPlayerData',
 		  'globals/MapColor',
 		  'globals/MaterialData',
+      'globals/NetworkData',
       'globals/PlayerCapabilities',
 		  'globals/PlayerData',
       'globals/RemotePlayerData',
