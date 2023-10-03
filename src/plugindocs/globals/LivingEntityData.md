@@ -51,7 +51,7 @@ It has the following methods:
 - `getAttackingPlayer() : PlayerData`
 - `getLastAttacker() : LivingEntityData`
 - `getEntityLivingToAttack() : LivingEntityData`
-- `setEntityLivingToAttack({uuid: String}) : void`
+- `setEntityLivingToAttack({entity: EntityRef}) : void`
 - `canBreatheUnderwater() : Boolean`
 - `isChild() : Boolean`
 - `canDropLoot() : Boolean`

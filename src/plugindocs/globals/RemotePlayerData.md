@@ -11,5 +11,5 @@ A RemotePlayerData usually has all of the properties of [PlayerData](PlayerData.
 - `otherPlayerMPPitch: Number`
 
 It has these methods:
-- `setCurrentItemOrArmor({slotIn: Integer, itemNbt: String}) : void`
+- `setCurrentItemOrArmor({slotIn: Integer, itemStack: ItemStackRef}) : void`
 - `isSpectator() : Boolean`

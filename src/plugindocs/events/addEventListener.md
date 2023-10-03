@@ -32,3 +32,6 @@ It has the following valid values:
 
 More events:
 [Receiving packet events](FromServerEvents.md)
+
+### (Function) Callback
+The function to call when this event fires.
