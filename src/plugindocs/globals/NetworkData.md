@@ -19,6 +19,9 @@ Methods:
 - `sendPacketUseEntity({entityRef: EntityRef, action: String}) : void`
     - `action` can be one of: `INTERACT`, `ATTACK` or `INTERACT_AT`
 - `sendPacketPlayer({isOnGround: Boolean}) : void`
+- `sendPacketPlayerPosition({posX: Number, posY: Number, posZ: Number, isOnGround: Boolean}) : void`
+- `sendPacketPlayerLook({playerYaw: Number, playerPitch: Number, isOnGround: Boolean}) : void`
+- `sendPacketPlayerPosLook({playerX: Number, playerY: Number, playerZ: Number, playerYaw: Number, playerPitch: Number, isOnGround: Boolean}) : void`
 - `sendPacketPlayerDigging({action: String, pos: BlockPos, facing: String}) : void`
     - `action` can be one of: `START_DESTROY_BLOCK`, `ABORT_DESTROY_BLOCK`, `STOP_DESTROY_BLOCK`, `DROP_ALL_ITEMS`, `DROP_ITEM` or `RELEASE_USE_ITEM`
     - `facing` can be one of: `UP`, `DOWN`, `NORTH`, `SOUTH`, `EAST` or `WEST`
