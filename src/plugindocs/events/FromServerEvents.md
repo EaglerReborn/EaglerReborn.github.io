@@ -76,7 +76,7 @@ Events called by packets being received from the server by the client.
 
 - `packetentityteleport`
     Called when the server teleports an entity. Passes an object with properties:
-    - `entityId`: Integer representing the entity id of the player.
+    - `entityId`: Integer representing the entity id of the entity.
     - `posX`: Integer representing the new x position of the entity.
     - `posY`: Integer representing the new y position of the entity.
     - `posZ`: Integer representing the new z position of the entity.
