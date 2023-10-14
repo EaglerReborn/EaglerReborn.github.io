@@ -3,6 +3,7 @@ Events called by packets being received from the server by the client.
 
 - `packetjoingame`
     Called when the user joins a server. Passes an object with properties:
+    - `ip`: String representing the server IP address. [read-only]
     - `gameType`: String representing the gamemode.
     - `difficulty`: String representing the difficulty.
     - `entityId`: Integer representing the entity id of the player.
@@ -391,6 +392,7 @@ Events called by packets being received from the server by the client.
         - `gamemode`: String [read-only]
         - `displayNameFormatted`: String [read-only]
         - `displayName`: String [read-only]
+        - `profileName`: String [read-only]
     - `preventDefault`: Boolean representing whether or not to cancel processing the packet. Default is `false`.
 
 - `packetkeepalive`
