@@ -1,4 +1,4 @@
-# Receiving packet events
+# Sending packet events
 Events called by packets being sent to the server by the client.
 
 - `sendpacketanimation`
