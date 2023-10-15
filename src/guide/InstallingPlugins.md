@@ -1,22 +1,23 @@
 # How to install a plugin
 
-<i>Please keep in mind that these plugins are fully client side and therefore work on most servers. They can be considered hacks or unfair advantages, so be careful when using them.</i>
+_Please keep in mind that these plugins are fully client side and therefore work on most servers. They can be considered hacks or unfair advantages, so be careful when using them._
 
-<ol>
-  <li>Open the compiled client</li>
-  <li>Open options</li>
-  <li>Click 'Plugins'</li>
-  <li>Click 'Add New'</li>
-  <li>Paste in the .js url.</li>
-  <li>Optional: Refresh the GUI to see if the plugin loaded correctly.</li>
-  <li>Optional: If the plugin is not working, go to options > plugins and make sure it says 'LOADED' next to your plugin. If it doesn't, it's not my fault!!!</li>
-</ol>
+1. Open the compiled client
+2. Open options
+3. Click 'Plugins'
+4. Click 'Add New'
+5. Paste in the .js url.
+6. Optional: Refresh the GUI to see if the plugin loaded correctly.
 
-Here is a sample plugin that allows you to climb up walls like a spider:
-https://raw.githubusercontent.com/EaglerReborn/reborn/main/exampleplugins/spider.js
 
-And one that allows you to step up 9.5 blocks:<br>
+-----
+
+
+Here is a sample plugin that prevents you from taking fall damage:\
+https://raw.githubusercontent.com/EaglerReborn/reborn/main/exampleplugins/nofall.js
+
+And one that allows you to step up 9.5 blocks:\
 https://raw.githubusercontent.com/EaglerReborn/reborn/main/exampleplugins/step.js
 
-And finally, a grappling hook mod!:<br>
+And finally, a grappling hook mod!:\
 https://raw.githubusercontent.com/EaglerReborn/reborn/main/exampleplugins/grapplehook.js

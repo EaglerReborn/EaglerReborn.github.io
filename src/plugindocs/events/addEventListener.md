@@ -15,16 +15,23 @@ It has the following valid values:
 - `gui`
     Called when the Plugin Manager GUI shows up. No arguments passed to callback.
 
+- `load`
+    Called when all plugins have finished loading.
+
 - `update`
     Called every client tick. No arguments passed to callback.
 
 - `sendchatmessage`
     Called just before the player sends a chat message. Passes an object with properties:
     - `message`: String representing the chat message.
-    - `preventDefault:` Boolean representing whether or not to cancel sending the packet. Default is `false`.
+    - `preventDefault:` Boolean representing whether or not to cancel processing the chat message. Default is `false`.
 
 - `postmotionupdate`
     Called after player motion is updated. No arguments passed to callback.
+
+- `motionupdate`
+    Called on motion update.
+    - `preventDefault`: Boolean representing whether or not to cancel sending motion updates to the server.
 
 - `premotionupdate`
     Called before player motion is updated. Passes an object with properties:
@@ -39,8 +46,10 @@ It has the following valid values:
     - `preventDefault`: Boolean representing whether or not to prevent the default action for this key (if any).
 
 
-More events:
+### More events:
+
 [Receiving packet events](FromServerEvents.md)
+
 [Sending packet events](ToServerEvents.md)
 
 ### (Function) Callback

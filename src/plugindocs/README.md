@@ -4,9 +4,11 @@ The Plugin API consists of a global JavaScript object on the window, called, ver
 
 It has the following properties:
 - `player: LocalPlayerData`
-    - A [`LocalPlayerData`](globals/LocalPlayerData.md) made from `EntityPlayerSP`.
+    - A [`LocalPlayerData`](globals/LocalPlayerData.md) made from `EntityPlayerSP`. Regenerated every time the `update` event is called.
 - `network: NetworkData`
-    - A [`NetworkData`](globals/NetworkData.md) made from `NetHandlerPlayClient`.
+    - A [`NetworkData`](globals/NetworkData.md) made from `NetHandlerPlayClient`. Regenerated every time the `update` event is called.
+- `settings: GameSettingsData`
+    - A [`GameSettingsData`](globals/GameSettingsData.md) made from `GameSettings`. Regenerated every time the `update` event is called.
 - `items: ItemData{}`
     - A [`ItemData`](globals/ItemData.md) dictionary of all item types, and block-item types. [Auto]
 - `blocks: BlockData{}`
@@ -39,6 +41,8 @@ It has the following methods:
     - Triggers a left click ingame.
 - `rightClickMouse()`
     - Triggers a right click ingame.
+- `update()`
+    - Force triggers a Plugin API update. Note that while the update event fires, not all objects are necessarily generated. Eg: Calling `update()` while not ingame will not generate `PluginAPI.player` or `PluginAPI.network`
 
 ### Passing 'Ref' objects
 Eg: `setCurrentItemOrArmor({slotIn: Integer, itemStack: ItemStackRef}) : void`
