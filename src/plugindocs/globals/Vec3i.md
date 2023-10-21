@@ -5,9 +5,9 @@ Represents a 3d integer point in 3d space.
 PluginAPI.contructors.Vec3i({x: Integer, y: Integer, z: Integer})
 
 Has the following properties:
-- `x` : Integer
-- `y` : Integer
-- `z` : Integer
+- `x`: Integer
+- `y`: Integer
+- `z`: Integer
 
 Has the following methods:
 - `hashCode() : Integer`

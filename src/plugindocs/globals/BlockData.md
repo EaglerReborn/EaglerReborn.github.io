@@ -24,6 +24,7 @@ Has the following properties:
 - `blockResistance`: Integer: equal to the block's `blockResistance`
 - `noRender`: Boolean: equal to the block's `noRender`
 - `forceRender`: Boolean: equal to the block's `forceRender`
+- `fullCube`: Boolean: equal to the block's `fullCube`
 
 It has the following methods:
 - `getID() : Integer`
