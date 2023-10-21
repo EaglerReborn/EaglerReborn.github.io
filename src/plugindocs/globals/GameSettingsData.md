@@ -1,4 +1,4 @@
-# BlockData
+# GameSettingsData
 Represents the game's settings.
 
 Has the following properties:
