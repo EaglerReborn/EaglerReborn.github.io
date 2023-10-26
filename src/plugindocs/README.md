@@ -20,7 +20,7 @@ It has the following properties:
 - `constructors: Object`
     - A object containing constructors to make some Java objects from within JavaScript. [Auto]
 - `javaClient: Object`
-    - This is the `Minecraft` instance exposed to JavaScript. It has no wrapping, and so many properties will be illegible. To use it, I would recommend editing the `build.gradle` in the worspace to set `minifying: false;` [Auto]
+    - This is the `Minecraft` instance exposed to JavaScript. It has no wrapping, and so many properties will be illegible. To use it, I would recommend editing the `build.gradle` in the workspace to set `minifying: false;` [Auto]
 - `version: String`
     - The version of the Plugin API (If not accessible, you can check the PluginAPI version in the f3 menu)
 - `clientBrand: String`
